@@ -2,3 +2,20 @@
 :numbered:
 :title: AsciiDoctor GitHub Pages Action
 ifdef::env-github[:outfilesuffix: .adoc]
+
+ifdef::env-github,env-browser[]
+// Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+= {title} image:https://img.shields.io/github/actions/workflow/status/manoelcampos/asciidoctor-ghpages-action/asciidoctor-ghpages.yml[GitHub Pages Publish,link=http://manoelcampos.com/asciidoctor-ghpages-action/]
+endif::[]
+
+ifndef::env-github[]
+= {title}
+endif::[]
