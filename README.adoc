@@ -1,21 +1,36 @@
-:icons: font
-:numbered:
-:title: AsciiDoctor GitHub Pages Action
-ifdef::env-github[:outfilesuffix: .adoc]
+ifndef::env-github[:toc: left]
+:toc-title: Inhalt
+:toclevels: 5
+:figure-caption: Figur
+:example-caption!:
+:table-caption: Tabelle
+:note-caption: Hinweis
+// zum Generieren eines PDF aus VS Code (HTML muss mit eingebetteten Bildern generiert werden, damit daraus ein korrektes PDF erstellt werden kann)
+:data-uri:
+:source-highlighter: highlight.js
+:sectnums:
+:sectnumlevels: 5
+:sectlinks:
+:sectanchors:
+:includedir: docs
 
-ifdef::env-github,env-browser[]
-// Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
-:caution-caption: :fire:
-:important-caption: :exclamation:
-:note-caption: :paperclip:
-:tip-caption: :bulb:
-:warning-caption: :warning:
-endif::[]
+= INTERLIS 2.4 Referenzhandbuch
+Stefan Henrich <stefan.henrich@moflex.ch>
+// Versionierung
+:revdate: {docdate}
+:revnumber: 0.1.3
+// Pdf output
+:title-page:
+:chapter-label: // deprecated
 
-ifdef::env-github[]
-= {title} image:https://img.shields.io/github/actions/workflow/status/manoelcampos/asciidoctor-ghpages-action/asciidoctor-ghpages.yml[GitHub Pages Publish,link=http://manoelcampos.com/asciidoctor-ghpages-action/]
-endif::[]
-
+// Die Verwiese auf die Inhalte der Dokumentation sollen im README auf Github nicht angezeigt werden.
 ifndef::env-github[]
-= {title}
+include::{includedir}/test_index.adoc[]
+endif::[]
+
+// Erklärung und Link auf Website
+ifdef::env-github[]
+In diesem Repository wird die Online-Version des INTERLIS 2.4 Referenzhandbuches gepflegt. Die Quelldateien der einzelnen Haupt- und Unterkapitel befinden sich im Verzeichnis `docs`. Ergänzungen und Korrekturen bitte als Issue oder allenfalls PR erfassen.
+
+Die aktuelle Website ist unter https://geostandards-ch.github.io/doc_refhb24/ erreichbar.
 endif::[]
