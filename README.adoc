@@ -1,2 +1,4 @@
-# A000_Test
-Test
+:icons: font
+:numbered:
+:title: AsciiDoctor GitHub Pages Action
+ifdef::env-github[:outfilesuffix: .adoc]
