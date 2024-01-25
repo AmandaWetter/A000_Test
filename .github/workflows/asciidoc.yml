@@ -7,6 +7,8 @@ on:
 jobs:
   adoc_build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     name: Asciidoctoring the docs to pretty HTML!
     steps:
     - name: Checkout code
