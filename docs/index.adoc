@@ -1,0 +1,15 @@
+= MyProject documentation
+:docinfo: shared
+:doctype: book
+:title: MyProject documentation
+:toc: left
+:toclevels: 2
+:sectanchors:
+:sectlinks:
+:sectnums:
+
+toc::[]
+
+== Hello World!
+This is the introduction to the **MyProject documentation**!
+include::impressum.adoc[]
