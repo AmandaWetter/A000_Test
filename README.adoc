@@ -25,7 +25,7 @@ Stefan Henrich <stefan.henrich@moflex.ch>
 
 // Die Verwiese auf die Inhalte der Dokumentation sollen im README auf Github nicht angezeigt werden.
 ifndef::env-github[]
-include::{includedir}/test_index.adoc[]
+include::{includedir}/impressum.adoc[]
 endif::[]
 
 // Erklärung und Link auf Website
