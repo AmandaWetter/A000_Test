@@ -17,7 +17,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout Code 
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
     - name: Get build container
@@ -33,7 +33,7 @@ jobs:
         publish_dir: ./docs/
 
     - name: Deploy docs to ghpages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       with: 
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_branch: gh-pages
